@@ -4,8 +4,8 @@ import path from 'path';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
-  // Default to repo name /Spatial-canvas/ in production or use VITE_BASE_PATH if provided
-  const basePath = env.VITE_BASE_PATH || (mode === 'production' ? '/Spatial-canvas/' : '/');
+  // Default to repo name /FULL-STACK/ in production or use VITE_BASE_PATH if provided
+  const basePath = env.VITE_BASE_PATH || (mode === 'production' ? '/FULL-STACK/' : '/');
   
   return {
     base: basePath,
